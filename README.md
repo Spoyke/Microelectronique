@@ -277,21 +277,42 @@ Maintenant que nous avons un système fonctionnel, nous pouvons le transformer e
 Dans un premier temps, nous allons écrire la fonction `init_REG()` afin d'initialiser les 4 registres `slv_reg(0→3)` avec les 4 valeurs suivantes : `2`, `6`, `3` et `5` respectivement. Voici le programme que nous avons écrit : 
 
 ```C
-//LE CODE INIT_REG()
+void init_REG() {
+	SEG7_mWriteReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_0, 2);
+	SEG7_mWriteReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_1, 6);
+	SEG7_mWriteReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_2, 3);
+	SEG7_mWriteReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_3, 5);
+}
 ```
 
 Ainsi que les lignes de codes permettant d'afficher le contenu des différents registres :
 
 ```C
-LE CODE AFFICHAGE DE REGISTRES
+printf("REG 0 : %lu\n\r", SEG7_mReadReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_0));
+printf("REG 1 : %lu\n\r", SEG7_mReadReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_1));
+printf("REG 2 : %lu\n\r", SEG7_mReadReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_2));
+printf("REG 3 : %lu\n\r", SEG7_mReadReg(XPAR_SEG7_0_S00_AXI_BASEADDR, OFF_REG_3));
 ```
 
 Voici ce que nous obtenons dans la console :
 
-
 ![Contenu des registres après initialisation](Valeur_registres.PNG)
-
-
 
 ### Une IP hardware pour contrôler les afficheurs 7 segments
 
+Dans cette partie, nous cherchons à alléger la charge du processeur de la gestion de l'afficheur 7 segments. Pour cela, nous avons modifiés le code `VHDL` de l'IP. 
+
+Dans un premier temps, nous ajoutons à l'IP des ports de sorties afin de communiquer avec les afficheurs. 
+
+Puis, dans un second temps, nous modifions le code pour qu'il récupère le contenu des registres de la partie précédente et qu'il les écrive sur les afficheurs : 
+
+```VHD
+```
+
+Dans la configuration du système, nous supprimons les éléments gérant les afficheurs précédents et nous relions les 7 segments au nouveau composant.
+
+Ainsi, en théorie, nous somme capable de contrôler l'affichage des 7 segments depuis le processeur en modifiant simplement la valeur des registre `slv_reg`.
+
+Malheureusement, une erreur est survenue lors de la génération du bitstream et nous n'avons pas pu tester le code.
+
+NB : L'erreur portait sur les variables `S_AXI_Data` et `S_AXI_Anodes` du code `VHDL` qui indiquait possiblement un mauvais type entre ces variables et celles attendu par les afficheurs mais nous avons perdu le vrai message d'erreur. 
