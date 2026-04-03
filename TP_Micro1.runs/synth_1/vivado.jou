@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Apr  2 12:17:52 2026
+# Process ID: 9808
+# Current directory: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1
+# Command line: vivado.exe -log ublaze_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_wrapper.tcl
+# Log file: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/ublaze_wrapper.vds
+# Journal file: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ublaze_wrapper.tcl -notrace

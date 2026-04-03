@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ublaze_xbar_0_synth_1" LaunchDir="C:/Users/geoflois31/Microelectronique/TP_Micro1/TP_Micro1.runs/ublaze_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ublaze_microblaze_0_axi_intc_0_synth_1" LaunchDir="C:/Users/geoflois31/Microelectronique/TP_Micro1/TP_Micro1.runs/ublaze_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ublaze_axi_timer_0_0_synth_1" LaunchDir="C:/Users/geoflois31/Microelectronique/TP_Micro1/TP_Micro1.runs/ublaze_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/geoflois31/Microelectronique/TP_Micro1/TP_Micro1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ublaze_xbar_0_synth_1"/>
+		<Parent Id="ublaze_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="ublaze_axi_timer_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/geoflois31/Microelectronique/TP_Micro1/TP_Micro1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="ublaze_xbar_0_synth_1"/>
+		<Parent Id="ublaze_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="ublaze_axi_timer_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,555 @@
+
+*** Running vivado
+    with args -log ublaze_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_wrapper.tcl
+
+
+****** Vivado v2019.1.2 (64-bit)
+  **** SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+  **** IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ublaze_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/geoflois31/Documents/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/PROGRAMS/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top ublaze_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3996 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 742.824 ; gain = 177.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ublaze_wrapper' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/hdl/ublaze_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ublaze' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1359]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_SEG7_0_1' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_SEG7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_SEG7_0_1' (1#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_SEG7_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_axi_gpio_2_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_axi_gpio_2_0' (2#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_axi_timer_0_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_timer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_axi_timer_0_0' (3#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_timer_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'ublaze_axi_timer_0_0' has 26 connections declared, but only 23 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1584]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_axi_uartlite_0_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_axi_uartlite_0_0' (4#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'ublaze_axi_uartlite_0_0' has 22 connections declared, but only 21 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1608]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_clk_wiz_0_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_clk_wiz_0_0' (5#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_mdm_1_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_mdm_1_0' (6#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_microblaze_0_1' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_microblaze_0_1' (7#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_microblaze_0_axi_intc_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_microblaze_0_axi_intc_0' (8#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_microblaze_0_axi_periph_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1905]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1WILQL2' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1WILQL2' (9#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_OKYVYF' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_OKYVYF' (10#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:144]
+WARNING: [Synth 8-7023] instance 'm01_couplers' of module 'm01_couplers_imp_OKYVYF' has 42 connections declared, but only 40 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:2885]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_VFV6PH' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:290]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_VFV6PH' (11#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:290]
+WARNING: [Synth 8-7023] instance 'm02_couplers' of module 'm02_couplers_imp_VFV6PH' has 42 connections declared, but only 40 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1PXPFDW' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:436]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1PXPFDW' (12#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:436]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_9N5F81' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:568]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_9N5F81' (13#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:568]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1311A68' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:700]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1311A68' (14#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:700]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_19VXJ5E' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:832]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_19VXJ5E' (15#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:832]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1HOQQMF' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1212]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1HOQQMF' (16#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1212]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_xbar_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_xbar_0' (17#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_microblaze_0_axi_periph_0' (18#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1905]
+WARNING: [Synth 8-7023] instance 'microblaze_0_axi_periph' of module 'ublaze_microblaze_0_axi_periph_0' has 158 connections declared, but only 140 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1727]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_K2SS6S' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:978]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_dlmb_bram_if_cntlr_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_dlmb_bram_if_cntlr_0' (19#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_dlmb_v10_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_dlmb_v10_0' (20#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'ublaze_dlmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1124]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_ilmb_bram_if_cntlr_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_ilmb_bram_if_cntlr_0' (21#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_ilmb_v10_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_ilmb_v10_0' (22#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'ublaze_ilmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1170]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_lmb_bram_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_lmb_bram_0' (23#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'ublaze_lmb_bram_0' has 16 connections declared, but only 14 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1195]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_K2SS6S' (24#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:978]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_microblaze_0_xlconcat_0' [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_xlconcat_0/synth/ublaze_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (25#1) [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_microblaze_0_xlconcat_0' (26#1) [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_xlconcat_0/synth/ublaze_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ublaze_rst_clk_wiz_0_100M_0' [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_rst_clk_wiz_0_100M_0' (27#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/.Xil/Vivado-9808-c304-pc4/realtime/ublaze_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'ublaze_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1894]
+WARNING: [Synth 8-3848] Net anodes in module/entity ublaze does not have driver. [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1370]
+WARNING: [Synth 8-3848] Net data in module/entity ublaze does not have driver. [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1371]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze' (28#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/synth/ublaze.v:1359]
+INFO: [Synth 8-6155] done synthesizing module 'ublaze_wrapper' (29#1) [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/hdl/ublaze_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HOQQMF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HOQQMF has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HOQQMF has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1HOQQMF has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_19VXJ5E has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_19VXJ5E has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_19VXJ5E has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_19VXJ5E has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1311A68 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1311A68 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1311A68 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1311A68 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_9N5F81 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_9N5F81 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_9N5F81 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_9N5F81 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1PXPFDW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1PXPFDW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1PXPFDW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1PXPFDW has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_VFV6PH has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_VFV6PH has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_VFV6PH has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_VFV6PH has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_OKYVYF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_OKYVYF has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_OKYVYF has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_OKYVYF has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1WILQL2 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1WILQL2 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1WILQL2 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1WILQL2 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_bresp[1]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[31]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[30]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[29]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[28]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[27]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[26]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[25]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[24]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[23]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[22]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[21]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[20]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[19]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[18]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[17]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[16]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[15]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[14]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[13]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[12]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[11]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[10]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[9]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[8]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[7]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[6]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[5]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[4]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[3]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[2]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rdata[1]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M01_AXI_rresp[1]
+WARNING: [Synth 8-3331] design ublaze_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 812.746 ; gain = 247.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 812.746 ; gain = 247.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 812.746 ; gain = 247.777
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0_in_context.xdc] for cell 'ublaze_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0_in_context.xdc] for cell 'ublaze_i/clk_wiz_0'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_1/ublaze_microblaze_0_1/ublaze_microblaze_0_1_in_context.xdc] for cell 'ublaze_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_1/ublaze_microblaze_0_1/ublaze_microblaze_0_1_in_context.xdc] for cell 'ublaze_i/microblaze_0'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_gpio_2_0/ublaze_axi_gpio_2_0/ublaze_axi_gpio_2_0_in_context.xdc] for cell 'ublaze_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_gpio_2_0/ublaze_axi_gpio_2_0/ublaze_axi_gpio_2_0_in_context.xdc] for cell 'ublaze_i/axi_gpio_2'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0_in_context.xdc] for cell 'ublaze_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0/ublaze_axi_uartlite_0_0_in_context.xdc] for cell 'ublaze_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_dlmb_v10_0/ublaze_dlmb_v10_0/ublaze_dlmb_v10_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_dlmb_v10_0/ublaze_dlmb_v10_0/ublaze_dlmb_v10_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_ilmb_v10_0/ublaze_ilmb_v10_0/ublaze_dlmb_v10_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_ilmb_v10_0/ublaze_ilmb_v10_0/ublaze_dlmb_v10_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_dlmb_bram_if_cntlr_0/ublaze_dlmb_bram_if_cntlr_0/ublaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_dlmb_bram_if_cntlr_0/ublaze_dlmb_bram_if_cntlr_0/ublaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_ilmb_bram_if_cntlr_0/ublaze_ilmb_bram_if_cntlr_0/ublaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_ilmb_bram_if_cntlr_0/ublaze_ilmb_bram_if_cntlr_0/ublaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_lmb_bram_0/ublaze_lmb_bram_0/ublaze_lmb_bram_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_lmb_bram_0/ublaze_lmb_bram_0/ublaze_lmb_bram_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_xbar_0/ublaze_xbar_0/ublaze_xbar_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_xbar_0/ublaze_xbar_0/ublaze_xbar_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_axi_intc_0/ublaze_microblaze_0_axi_intc_0/ublaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_microblaze_0_axi_intc_0/ublaze_microblaze_0_axi_intc_0/ublaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'ublaze_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_mdm_1_0/ublaze_mdm_1_0/ublaze_mdm_1_0_in_context.xdc] for cell 'ublaze_i/mdm_1'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_mdm_1_0/ublaze_mdm_1_0/ublaze_mdm_1_0_in_context.xdc] for cell 'ublaze_i/mdm_1'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_rst_clk_wiz_0_100M_0/ublaze_rst_clk_wiz_0_100M_0/ublaze_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'ublaze_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_rst_clk_wiz_0_100M_0/ublaze_rst_clk_wiz_0_100M_0/ublaze_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'ublaze_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_timer_0_0/ublaze_axi_timer_0_0/ublaze_axi_timer_0_0_in_context.xdc] for cell 'ublaze_i/axi_timer_0'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_axi_timer_0_0/ublaze_axi_timer_0_0/ublaze_axi_timer_0_0_in_context.xdc] for cell 'ublaze_i/axi_timer_0'
+Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_SEG7_0_1/ublaze_SEG7_0_1/ublaze_SEG7_0_1_in_context.xdc] for cell 'ublaze_i/SEG7_0'
+Finished Parsing XDC File [c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_SEG7_0_1/ublaze_SEG7_0_1/ublaze_SEG7_0_1_in_context.xdc] for cell 'ublaze_i/SEG7_0'
+Parsing XDC File [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/constrs_1/imports/Docts_Basys3/basys3_master.xdc]
+Finished Parsing XDC File [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/constrs_1/imports/Docts_Basys3/basys3_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/constrs_1/imports/Docts_Basys3/basys3_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ublaze_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ublaze_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 910.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 910.602 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ublaze_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/geoflois31/Documents/Partie3/TP_Micro1.srcs/sources_1/bd/ublaze/ip/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0/ublaze_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for ublaze_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/axi_gpio_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/axi_timer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ublaze_i/SEG7_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ublaze_i/clk_wiz_0/clk_out1' to pin 'ublaze_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ublaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'ublaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ublaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'ublaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ublaze_i/mdm_1/Dbg_Clk_0' to pin 'ublaze_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ublaze_i/mdm_1/Dbg_Update_0' to pin 'ublaze_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 912.613 ; gain = 347.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |ublaze_xbar_0                  |         1|
+|2     |ublaze_SEG7_0_1                |         1|
+|3     |ublaze_axi_gpio_2_0            |         1|
+|4     |ublaze_axi_timer_0_0           |         1|
+|5     |ublaze_axi_uartlite_0_0        |         1|
+|6     |ublaze_clk_wiz_0_0             |         1|
+|7     |ublaze_mdm_1_0                 |         1|
+|8     |ublaze_microblaze_0_1          |         1|
+|9     |ublaze_microblaze_0_axi_intc_0 |         1|
+|10    |ublaze_rst_clk_wiz_0_100M_0    |         1|
+|11    |ublaze_dlmb_bram_if_cntlr_0    |         1|
+|12    |ublaze_dlmb_v10_0              |         1|
+|13    |ublaze_ilmb_bram_if_cntlr_0    |         1|
+|14    |ublaze_ilmb_v10_0              |         1|
+|15    |ublaze_lmb_bram_0              |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |ublaze_SEG7_0_1                |     1|
+|2     |ublaze_axi_gpio_2_0            |     1|
+|3     |ublaze_axi_timer_0_0           |     1|
+|4     |ublaze_axi_uartlite_0_0        |     1|
+|5     |ublaze_clk_wiz_0_0             |     1|
+|6     |ublaze_dlmb_bram_if_cntlr_0    |     1|
+|7     |ublaze_dlmb_v10_0              |     1|
+|8     |ublaze_ilmb_bram_if_cntlr_0    |     1|
+|9     |ublaze_ilmb_v10_0              |     1|
+|10    |ublaze_lmb_bram_0              |     1|
+|11    |ublaze_mdm_1_0                 |     1|
+|12    |ublaze_microblaze_0_1          |     1|
+|13    |ublaze_microblaze_0_axi_intc_0 |     1|
+|14    |ublaze_rst_clk_wiz_0_100M_0    |     1|
+|15    |ublaze_xbar_0                  |     1|
+|16    |IBUF                           |    18|
+|17    |OBUF                           |    13|
+|18    |OBUFT                          |     2|
++------+-------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-------------------------------------+------+
+|      |Instance                      |Module                               |Cells |
++------+------------------------------+-------------------------------------+------+
+|1     |top                           |                                     |  1845|
+|2     |  ublaze_i                    |ublaze                               |  1812|
+|3     |    microblaze_0_axi_periph   |ublaze_microblaze_0_axi_periph_0     |   818|
+|4     |    microblaze_0_xlconcat     |ublaze_microblaze_0_xlconcat_0       |     0|
+|5     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_K2SS6S |   496|
++------+------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 84 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 924.109 ; gain = 259.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 924.109 ; gain = 359.141
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 936.336 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 936.336 ; gain = 626.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 936.336 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/synth_1/ublaze_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ublaze_wrapper_utilization_synth.rpt -pb ublaze_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  2 12:18:33 2026...

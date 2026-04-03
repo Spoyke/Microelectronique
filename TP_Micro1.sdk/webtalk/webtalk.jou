@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# 
+# Start of session at: Thu Apr  2 08:42:27 2026
+# Process ID: 9720
+# Current directory: C:/Users/geoflois31/Documents/TP_Micro_timer/TP_Micro1/TP_Micro1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/geoflois31/Documents/TP_Micro_timer/TP_Micro1/TP_Micro1.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/geoflois31/Documents/TP_Micro_timer/TP_Micro1/TP_Micro1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

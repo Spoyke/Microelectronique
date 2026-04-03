@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1.2 (64-bit)
+# SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+# IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+# Start of session at: Thu Apr  2 12:07:38 2026
+# Process ID: 12312
+# Current directory: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/ublaze_xbar_0_synth_1
+# Command line: vivado.exe -log ublaze_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ublaze_xbar_0.tcl
+# Log file: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/ublaze_xbar_0_synth_1/ublaze_xbar_0.vds
+# Journal file: C:/Users/geoflois31/Documents/Partie3/TP_Micro1.runs/ublaze_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ublaze_xbar_0.tcl -notrace
